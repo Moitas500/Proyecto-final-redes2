@@ -1,7 +1,9 @@
-from Graph import Graph
+from GraphDijkstra import GraphD
+from GraphBellmanFord import GraphB
+from ventana import ventana
 
 def main():
-    g = Graph(9)
+    """g = GraphD(9)
     g.add_edge(0, 1, 4)
     g.add_edge(0, 6, 7)
     g.add_edge(1, 6, 11)
@@ -23,7 +25,16 @@ def main():
     for vertex in range(len(D)):
         print("Distance from vertex 0 to vertex", vertex, "is", D[vertex])
 
-    g.bellman_ford(0)
+    g = GraphB(5)
+    g.add_edge(0, 1, 5)
+    g.add_edge(0, 2, 4)
+    g.add_edge(1, 3, 3)
+    g.add_edge(2, 1, 6)
+    g.add_edge(3, 2, 2)
+
+    g.bellman_ford(0)"""
+
+    ventana();
 
 if __name__ == "__main__":
     main()

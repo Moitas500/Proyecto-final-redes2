@@ -1,6 +1,6 @@
 from queue import PriorityQueue
 
-class Graph:
+class GraphD:
 
     def add_edge(self, u, v, weight):
          self.edges[u][v] = weight
